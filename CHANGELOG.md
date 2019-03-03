@@ -1,5 +1,6 @@
 # CHANGELOG
 ## v0.1 - alfa
+- v0.0.8 - test menu reading correct
 - v0.0.7 - prod version works fine
 - v0.0.6 - header and footer working fine
 - v0.0.5 - mirek001
