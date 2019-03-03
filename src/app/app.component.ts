@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import Menu from '../data/menu.json';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mdwiki-io';
+
+
+  constructor() {
+   console.log('Reading local json files');
+   console.log(Menu);
+  }
+
 }
