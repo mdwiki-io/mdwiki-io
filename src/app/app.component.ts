@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import Menu from '../data/menu.json';
+import { Component, OnInit } from '@angular/core';
+// import Menu from '../data/menu.json';
+// import { HttpService } from './http.service.js';
 
 
 @Component({
@@ -7,13 +8,17 @@ import Menu from '../data/menu.json';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'mdwiki-io';
 
 
-  constructor() {
-   console.log('Reading local json files');
-   console.log(Menu);
-  }
+  constructor(private http: HttpService) {}
+
+
+ngOnInit(){
+  //console.log(this.http.getConfig());
+}
+
+
 
 }
