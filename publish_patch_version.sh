@@ -1,6 +1,6 @@
 #!/bin/bash
-branch='master'
-nextbuild='patch'
+branch='alfa'
+nextbuild='prepatch'
 git add .
 read -p "Type commit message: " message
 git commit -m "$message"
