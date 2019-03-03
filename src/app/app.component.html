@@ -5,3 +5,10 @@
 ### Markdown h3 content
 </ngx-md>
 <div Markdown [path]="'https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md'"> </div>
+
+
+<div *ngFor = "let post of posts | async">
+  {{ post }}
+</div>
+
+{{ posts | async | json}}
