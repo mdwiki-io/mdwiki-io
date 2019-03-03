@@ -1,0 +1,282 @@
+/* NAVBAR CONTAINER VIEW */
+
+nav {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (min-width: 768px) {
+    nav {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        width: 1170px;
+    }
+}
+
+
+/* NAVBAR CONTAINER VIEW - END*/
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+}
+
+.navbar-inner {
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(0, 144, 255);
+    #background-image: -moz-linear-gradient(top, rgb(0, 144, 255), rgb(71, 166, 255));
+    #background-image: -ms-linear-gradient(top, rgb(0, 144, 255), rgb(71, 166, 255));
+    #background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(0, 144, 255)), to(rgb(71, 166, 255)));
+    background-image: -webkit-linear-gradient(top, rgb(0, 144, 255), rgb(71, 166, 255));
+    #background-image: -o-linear-gradient(top, rgb(0, 144, 255), rgb(71, 166, 255));
+    #background-image: linear-gradient(top, rgb(0, 144, 255), rgb(71, 166, 255));
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#303030', endColorstr='#1f1f1f', GradientType=0);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 9px 10px 11px;
+    line-height: 19px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .nav > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.31);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav .open > a {
+    background-color: rgba(0, 0, 0, 0.66);
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 0px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: rgba(27, 145, 255, 0.83);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+
+/* WYSRODKOWANIE */
+
+.navbar .nav,
+.navbar .nav> li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    *zoom: 1;
+    /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+.navbar-inner {
+    text-align: center;
+}
+
+
+/* WYSRODKOWANIE END */
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #mobileNav {
+        position: relative;
+    }
+    #mobileNav ul {
+        display: none;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    #mobileNav ul li a {
+        display: block;
+        padding: 1em;
+        background: rgba(27, 145, 255, 0.83);
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-right: 1px solid rgba(27, 145, 255, 0.83)
+    }
+    #mobileNav ul li a:hover {
+        color: rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0.66);
+    }
+    #mobileNav ul li:last-of-type a {
+        border-right: 0px;
+    }
+    #mobileNav ul li ul li a {
+        padding-left: 4em;
+    }
+    #mobileNav ul li ul li ul li a {
+        padding-left: 8em;
+    }
+    #mobileNav input.trigger {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #mobileNav input.trigger:checked~ ul,
+    #mobileNav input.trigger:checked~ ul li ul {
+        display: block !important;
+    }
+    @media (min-width: 768px) {
+        #mobileNav input.trigger:checked~ ul,
+        #mobileNav input.trigger:checked~ ul li ul {
+            /* older flexbox */
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            box-orient: horizontal;
+            /* newer flexbox */
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    #mobileNav label {
+        position: relative;
+        display: block;
+        min-height: 2em;
+        padding: .45em;
+        font-size: 1.1em;
+        margin: 0;
+        cursor: pointer;
+        background: rgb(0, 144, 255);
+        line-height: 2em;
+        color: rgb(255, 255, 255);
+    }
+    #mobileNav label:after {
+        position: absolute;
+        right: 1em;
+        top: .2em;
+        content: "\2261";
+        font-size: 1.8em;
+        color: rgb(255, 255, 255);
+    }
+    @media (min-width: 768px) {
+        #mobileNav ul {
+            /* older flexbox */
+            display: -ms-flexbox;
+            flex-direction: -ms-row;
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            box-orient: horizontal;
+            /* newer flexbox */
+            display: flex;
+            flex-direction: row;
+        }
+        #mobileNav ul li {
+            position: relative;
+            text-align: center;
+            /* older flexbox */
+            -ms-flex: 1;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            box-flex: 1;
+            /* newer flexbox */
+            flex: 1;
+        }
+        #mobileNav ul li ul {
+            display: none !important;
+            position: absolute;
+            top: 3.0625em;
+            left: 0;
+            display: block;
+            width: 12.5em;
+            z-index: 200;
+        }
+        #mobileNav ul li ul li {
+            text-align: left;
+        }
+        #mobileNav ul li ul li ul {
+            z-index: 300;
+            top: 0px;
+            left: 12.4em;
+        }
+        #mobileNav ul li ul li ul li a {
+            padding-left: 30px !important;
+        }
+        #mobileNav ul li:hover> ul {
+            display: block !important;
+        }
+        #mobileNav label {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+}
