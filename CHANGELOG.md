@@ -1,5 +1,6 @@
 # CHANGELOG
 ## v0.1 - alfa
+- v0.0.6 - header and footer working fine
 - v0.0.5 - mirek001
 - v0.0.4 - add package 'prismjs' and settings
 - v0.0.3 - add 'ngx-md' module and settings
