@@ -1,8 +1,8 @@
 {
 	"config": {
 		"theme": "default",
-		"header_file": "true",
-		"footer_file": "true",
+		"header_file": true,
+		"footer_file": true,
 		"menu": {
 			"items": [{
 					"link": "ZoomIn",
