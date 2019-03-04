@@ -3,23 +3,23 @@
 		"project_title": "TESTOWY Projekt",
 		"theme": "default",
 		"header_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/header.md",
-		"footer_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md",
+		"footer_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md"
 	},
 	"menu": {
 		"items": [{
-				"link": "ZoomIn",
-				"name": "Zoom In",
-				"file": "ZoomIn"
+				"link": "link1",
+				"name": "name1",
+				"file": "file1"
 			},
 			{
-				"link": "ZoomOut",
-				"name": "Zoom Out",
-				"file": "ZoomIn"
+				"link": "link2",
+				"name": "name2",
+				"file": "file2"
 			},
 			{
-				"link": "OriginalView",
-				"name": "Original View",
-				"file": "ZoomIn"
+				"link": "link3",
+				"name": "name3",
+				"file": "file3"
 			}
 		]
 	}
