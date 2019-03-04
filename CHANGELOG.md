@@ -1,5 +1,6 @@
 # CHANGELOG
 ## v0.1 - alfa
+- v0.0.12 - mdconfig update
 - v0.0.11 - update config file
 - v0.0.10 - new config and update files
 - v0.0.9 - get remote json to typescript variables working fine
