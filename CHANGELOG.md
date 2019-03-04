@@ -1,5 +1,6 @@
 # CHANGELOG
 ## v0.1 - alfa
+- v0.0.18 - update config file
 - v0.0.17 - test first themes
 - v0.0.16 - mdconfig test
 - v0.0.15 - mdconfig test
