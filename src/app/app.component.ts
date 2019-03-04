@@ -1,22 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpService } from './http.service';
+import { Component, OnInit } from "@angular/core";
+import { HttpService } from "./http.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
+  constructor(private http: HttpService) {}
 
+  posts: any;
+  result: any;
+  promiseResult: any;
 
-constructor(private http: HttpService){}
+  ngOnInit() {
 
-posts: any;
+    //this.http.getConfig().subscribe(result => (this.result = result));
 
-ngOnInit() {
-  this.posts = this.http.getConfig();
-  console.log("TEST LOGA", this.posts);
-}
-
-
+    this.http
+      .getConfig()
+      .toPromise()
+      .then(data => {
+        this.promiseResult = data;
+        console.log("Promise resolved.", this.promiseResult);
+        this.result = this.promiseResult.menu.items;
+      });
+  }
 }

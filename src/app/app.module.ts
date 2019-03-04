@@ -1,21 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { NgxMdModule } from 'ngx-md'; //ngx-md module
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { NgxMdModule } from "ngx-md"; //ngx-md module
 
-
-import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { AppComponent } from "./app.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NgxMdModule.forRoot(),
-    HttpClientModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxMdModule.forRoot(), HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
