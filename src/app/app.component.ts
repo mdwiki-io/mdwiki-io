@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   posts: any;
   result: any;
-  promiseResult: any;
+  configJson: any;
   menu_items: any;
 
   ngOnInit() {
@@ -22,9 +22,9 @@ export class AppComponent implements OnInit {
       .getConfig()
       .toPromise()
       .then(data => {
-        this.promiseResult = data;
-        console.log("Promise resolved.", this.promiseResult);
-        this.menu_items = this.promiseResult.config.menu.items;
+        this.configJson = data;
+        console.log("Promise resolved.", this.configJson);
+        this.menu_items = this.configJson.config.menu.items;
       });
   }
 }

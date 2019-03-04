@@ -1,5 +1,6 @@
 {
 	"config": {
+		"project_title": "TESTOWY Projekt",
 		"theme": "default",
 		"header_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/header.md",
 		"footer_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md",
