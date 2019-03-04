@@ -4,23 +4,23 @@
 		"theme": "default",
 		"header_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/header.md",
 		"footer_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md",
-		"menu": {
-			"items": [{
-					"link": "ZoomIn",
-					"name": "Zoom In",
-					"file": "ZoomIn"
-				},
-				{
-					"link": "ZoomOut",
-					"name": "Zoom Out",
-					"file": "ZoomIn"
-				},
-				{
-					"link": "OriginalView",
-					"name": "Original View",
-					"file": "ZoomIn"
-				}
-			]
-		}
+	},
+	"menu": {
+		"items": [{
+				"link": "ZoomIn",
+				"name": "Zoom In",
+				"file": "ZoomIn"
+			},
+			{
+				"link": "ZoomOut",
+				"name": "Zoom Out",
+				"file": "ZoomIn"
+			},
+			{
+				"link": "OriginalView",
+				"name": "Original View",
+				"file": "ZoomIn"
+			}
+		]
 	}
 }
