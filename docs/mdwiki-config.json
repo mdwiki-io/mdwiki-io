@@ -1,7 +1,7 @@
 {
 	"config": {
 		"theme": "default",
-		"header_file": true,
+		"header_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/header.md",
 		"footer_file": true,
 		"menu": {
 			"items": [{
