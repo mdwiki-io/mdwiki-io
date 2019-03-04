@@ -1,27 +1,14 @@
-{"menu": {
-    "header": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/header.md",
-    "items": [
-        {"id": "Open"},
-        {"id": "OpenNew", "label": "Open New"},
-        null,
-        {"id": "ZoomIn", "label": "Zoom In"},
-        {"id": "ZoomOut", "label": "Zoom Out"},
-        {"id": "OriginalView", "label": "Original View"},
-        null,
-        {"id": "Quality"},
-        {"id": "Pause"},
-        {"id": "Mute"},
-        null,
-        {"id": "Find", "label": "Find..."},
-        {"id": "FindAgain", "label": "Find Again"},
-        {"id": "Copy"},
-        {"id": "CopyAgain", "label": "Copy Again"},
-        {"id": "CopySVG", "label": "Copy SVG"},
-        {"id": "ViewSVG", "label": "View SVG"},
-        {"id": "ViewSource", "label": "View Source"},
-        {"id": "SaveAs", "label": "Save As"},
-        null,
-        {"id": "Help"},
-        {"id": "About", "label": "About Adobe CVG Viewer..."}
-    ]
-}}
+{
+	"config": {
+    "theme": "default",
+		"header_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/header.md",
+    "footer_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md",
+		"menu": {
+			"items": [
+        {"link": "ZoomIn", "name": "Zoom In", "file": "ZoomIn"},
+        {"link": "ZoomOut", "name": "Zoom Out", "file": "ZoomIn"},
+        {"link": "OriginalView", "name": "Original View", "file": "ZoomIn"},
+			]
+		}
+	}
+}

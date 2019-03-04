@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   posts: any;
   result: any;
   promiseResult: any;
+  menu_items: any;
 
   ngOnInit() {
 
@@ -23,7 +24,7 @@ export class AppComponent implements OnInit {
       .then(data => {
         this.promiseResult = data;
         console.log("Promise resolved.", this.promiseResult);
-        this.result = this.promiseResult.menu.items;
+        this.menu_items = this.promiseResult.config.menu.items;
       });
   }
 }
