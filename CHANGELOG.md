@@ -1,5 +1,6 @@
 # CHANGELOG
 ## v0.1 - alfa
+- v0.0.15 - mdconfig test
 - v0.0.14 - mkconfig test
 - v0.0.13 - mkconfig update
 - v0.0.12 - mdconfig update
