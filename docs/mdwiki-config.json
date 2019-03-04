@@ -1,13 +1,24 @@
 {
 	"config": {
-    "theme": "default",
+		"theme": "default",
 		"header_file": "true",
-    "footer_file": "true",
+		"footer_file": "true",
 		"menu": {
-			"items": [
-        {"link": "ZoomIn", "name": "Zoom In", "file": "ZoomIn"},
-        {"link": "ZoomOut", "name": "Zoom Out", "file": "ZoomIn"},
-        {"link": "OriginalView", "name": "Original View", "file": "ZoomIn"},
+			"items": [{
+					"link": "ZoomIn",
+					"name": "Zoom In",
+					"file": "ZoomIn"
+				},
+				{
+					"link": "ZoomOut",
+					"name": "Zoom Out",
+					"file": "ZoomIn"
+				},
+				{
+					"link": "OriginalView",
+					"name": "Original View",
+					"file": "ZoomIn"
+				}
 			]
 		}
 	}
