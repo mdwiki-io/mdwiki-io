@@ -1,8 +1,8 @@
 {
 	"config": {
     "theme": "default",
-		"header_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/header.md",
-    "footer_file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md",
+		"header_file": true,
+    "footer_file": true,
 		"menu": {
 			"items": [
         {"link": "ZoomIn", "name": "Zoom In", "file": "ZoomIn"},
