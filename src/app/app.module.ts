@@ -10,9 +10,10 @@ import { ClassicComponent } from './themes/classic/classic.component';
 import { BootstrapCompaktThemeComponent } from './themes/bootstrap-compakt-theme/bootstrap-compakt-theme.component';
 import { BootstrapCompactThemeComponent } from './themes/bootstrap-compact-theme/bootstrap-compact-theme.component';
 import { PageComponent } from './page/page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, ThemesComponent, ClassicComponent, BootstrapCompaktThemeComponent, BootstrapCompactThemeComponent, PageComponent],
+  declarations: [AppComponent, ThemesComponent, ClassicComponent, BootstrapCompaktThemeComponent, BootstrapCompactThemeComponent, PageComponent, PageNotFoundComponent],
   imports: [BrowserModule, AppRoutingModule,  NgxMdModule.forRoot(), HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]

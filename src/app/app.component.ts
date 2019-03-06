@@ -7,19 +7,20 @@ import { HttpService } from "./http.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  constructor(private http: HttpService) {}
+  constructor(private http: HttpService) {
+    this.http
+      .getConfig()
+      .toPromise()
+      .then(data => {
+        sessionStorage.setItem('mdconfig', JSON.stringify(data));
+        this.jsonData = data;
+      });
+  }
 
   jsonData: any;
 
   ngOnInit() {
 
-    this.http
-      .getConfig()
-      .toPromise()
-      .then(data => {
-        this.jsonData = data;
-        console.log("Promise resolved.", this.jsonData);
-        sessionStorage.setItem('mdconfig', JSON.stringify(this.jsonData));
-      });
+
   }
 }
