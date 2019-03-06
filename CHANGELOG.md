@@ -1,5 +1,6 @@
 # CHANGELOG
 ## v0.1 - alfa
+- v0.0.24 - add mdwiki-congig as mdwiki-io-config meta tag to index file
 - v0.0.23 - bootstrap compact theme working ok
 - v0.0.22 - testconfig file
 - v0.0.21 - test
