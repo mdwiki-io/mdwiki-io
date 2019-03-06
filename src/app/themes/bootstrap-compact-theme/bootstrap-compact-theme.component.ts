@@ -12,6 +12,8 @@ export class BootstrapCompactThemeComponent implements DoCheck, OnChanges, OnIni
   menu_items: Array<Item>;
   config: Config;
   menu: Menu;
+  footer_file: string;
+  header_file: string;
 
 
   // @Input() configJson;
@@ -22,11 +24,11 @@ export class BootstrapCompactThemeComponent implements DoCheck, OnChanges, OnIni
 
 
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
 
   }
+
+  ngOnInit() {}
 
   ngOnChanges(_changes: SimpleChanges){
 
@@ -37,6 +39,8 @@ export class BootstrapCompactThemeComponent implements DoCheck, OnChanges, OnIni
       console.log("MENU: ", this.jsonData.menu);
       this.project_title = this.config.project_title;
       this.menu_items = this.jsonData.menu.items;
+      this.header_file = this.config.header_file;
+      this.footer_file = this.config.footer_file;
     }catch(err){
       ignoreErrors(err);
     }

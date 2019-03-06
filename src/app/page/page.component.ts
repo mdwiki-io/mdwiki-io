@@ -24,11 +24,11 @@ menu_items: any;
     try{
       this.route.paramMap.subscribe((param: Params)=>{
         this.link = param.get('link');
+        this.file = 'index';
           for (let item of this.menu_items) {
               if (this.link === item.link) {
                 this.file = item.file;
               }
-              else this.file = 'index';
           }
       });
     }catch(err){}

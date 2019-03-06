@@ -1,6 +1,4 @@
 <div class="body">
-
-
 <div class="container">
         <div class="header clearfix">
             <nav>
@@ -12,27 +10,6 @@
             </nav>
             <h3 class="text-muted">{{ project_title }}</h3>
         </div>
-
-<ngx-md>
-# Markdown h1 content
-## Markdown h2 content
-### Markdown h3 content
-</ngx-md>
-        <div Markdown [path]="'https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/docs/footer.md'"></div>
-
-
-
-        <footer class="footer">
-            <p>&copy; Company 2017</p>
-        </footer>
-
-    </div> <!-- /container -->
-</div>
-<br>CONFIG:
-{{ project_config | json }}
-<br>
-<br>MENU:
-{{ menu_items | json }}
-
-
+<div Markdown [path]="header_file"></div>
 <router-outlet></router-outlet>
+<div Markdown [path]="footer_file"></div>
