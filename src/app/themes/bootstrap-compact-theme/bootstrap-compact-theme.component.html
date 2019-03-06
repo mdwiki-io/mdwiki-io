@@ -6,7 +6,7 @@
             <nav>
                 <ul class="nav nav-pills float-right">
                     <li *ngFor="let item of menu_items" class="nav-item">
-                        <a class="nav-link active" href="index.html">{{ item.name }} <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" [routerLink]="[item.link]" routerLinkActive="active">{{ item.name }} <span class="sr-only"></span></a>
                     </li>
                 </ul>
             </nav>
@@ -33,3 +33,6 @@
 <br>
 <br>MENU:
 {{ menu_items | json }}
+
+
+<router-outlet></router-outlet>

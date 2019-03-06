@@ -7,9 +7,9 @@
 	},
 	"menu": {
 		"items": [{
-				"link": "link1",
-				"name": "name1",
-				"file": "file1"
+				"link": "index",
+				"name": "index1",
+				"file": "indexfile"
 			},
 			{
 				"link": "link2",

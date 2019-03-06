@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnChanges, DoCheck, SimpleChanges } from '@angular/core';
-import { JsonConfig, Config, Menu, Item } from './jsonConfig.interface';
+import { JsonConfig, Config, Menu, Item } from './../../jsonConfig.interface';
 
 @Component({
   selector: 'app-bootstrap-compact-theme',

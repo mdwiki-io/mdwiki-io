@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
       .then(data => {
         this.jsonData = data;
         console.log("Promise resolved.", this.jsonData);
+        sessionStorage.setItem('mdconfig', JSON.stringify(this.jsonData));
       });
   }
 }
