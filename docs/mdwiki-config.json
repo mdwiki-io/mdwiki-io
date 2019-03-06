@@ -8,13 +8,13 @@
 	"menu": {
 		"items": [{
 				"link": "index",
-				"name": "index1",
-				"file": "indexfile"
+				"name": "ReadME",
+				"file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/README.md"
 			},
 			{
 				"link": "link2",
-				"name": "name2",
-				"file": "file2"
+				"name": "ChangeLOG",
+				"file": "https://raw.githubusercontent.com/mdwiki-io/mdwiki-io/master/CHANGELOG.md"
 			},
 			{
 				"link": "link3",

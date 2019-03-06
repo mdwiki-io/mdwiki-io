@@ -28,6 +28,7 @@ menu_items: any;
               if (this.link === item.link) {
                 this.file = item.file;
               }
+              else this.file = 'index';
           }
       });
     }catch(err){}
