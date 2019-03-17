@@ -1,0 +1,16 @@
+<div class="body">
+    <div class="container">
+            <div class="header clearfix">
+                <nav>
+                    <ul class="nav nav-pills float-right">
+                        <li *ngFor="let item of menu_items" class="nav-item">
+                            <a class="nav-link" [routerLink]="[item.link]" routerLinkActive="active">{{ item.name }} <span class="sr-only"></span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <h3 class="text-muted">{{ project_title }}</h3>
+            </div>
+    <div Markdown [path]="header_file"></div>
+    <router-outlet></router-outlet>
+    <div Markdown [path]="footer_file"></div>
+    
