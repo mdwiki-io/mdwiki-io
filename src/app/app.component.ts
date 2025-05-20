@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpService } from "./http.service";
+import { AuthService } from './auth/auth.service';
 
 @Component({
   selector: "app-root",
@@ -7,7 +8,9 @@ import { HttpService } from "./http.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  constructor(private http: HttpService) {
+  showLogin = true;
+
+  constructor(private http: HttpService, private auth: AuthService) {
     this.http
       .getConfig()
       .toPromise()
@@ -20,7 +23,10 @@ export class AppComponent implements OnInit {
   jsonData: any;
 
   ngOnInit() {
+    this.showLogin = !this.auth.isLoggedIn();
+  }
 
-
+  onLoggedIn() {
+    this.showLogin = false;
   }
 }
