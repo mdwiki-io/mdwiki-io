@@ -1,1 +1,2 @@
-<app-bootstrap-simple-theme [jsonData]="jsonData"></app-bootstrap-simple-theme>
+<app-login *ngIf="showLogin" (loggedIn)="onLoggedIn()"></app-login>
+<app-bootstrap-simple-theme *ngIf="!showLogin" [jsonData]="jsonData"></app-bootstrap-simple-theme>

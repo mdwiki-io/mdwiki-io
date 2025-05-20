@@ -1,0 +1,14 @@
+<div class="login-container">
+  <div *ngIf="!auth.isAdminCreated()">
+    <h2>Create Admin Account</h2>
+    <input [(ngModel)]="newUsername" placeholder="Username" />
+    <input type="password" [(ngModel)]="newPassword" placeholder="Password" />
+    <button (click)="createAdmin()">Create</button>
+  </div>
+  <div *ngIf="auth.isAdminCreated() && !auth.isLoggedIn()">
+    <h2>Login</h2>
+    <input [(ngModel)]="username" placeholder="Username" />
+    <input type="password" [(ngModel)]="password" placeholder="Password" />
+    <button (click)="login()">Login</button>
+  </div>
+</div>
